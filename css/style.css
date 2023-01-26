@@ -1,9 +1,11 @@
 :root {
   --off-color: red;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .mainNav h1 span {
   display: inline-block;
   transform: scaleX(-1);
