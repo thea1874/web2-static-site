@@ -152,7 +152,7 @@ html {
   background: none;
 }
 .purchaseBox {
-  background: #d8d8d8;
+  background: orange;
   color: var(--background-color);
   padding: 1rem;
 }
