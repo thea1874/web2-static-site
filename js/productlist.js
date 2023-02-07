@@ -17,15 +17,18 @@ const template = document.querySelector("#smallProducttemplate").content;
 const copy =template.cloneNode(true);
 //ændre indhold
 copy.querySelector("h3").textContent = product.productdisplayname;
-
-copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp` ; 
+copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`; 
+copy.querySelector(".price").textContent = "DKK " + product.price;
+copy.querySelector(".subtle").textContent = product.brandname;
 
 //brand 
 //price 
 //discount 
 
 
-//copy.querySelector("").textContent = product.brandname;
+//copy.querySelector("brand").textContent = product.brandname;
+
+//discount
 
 
 if(product.soldout){
