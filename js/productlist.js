@@ -21,14 +21,6 @@ copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${pro
 copy.querySelector(".price").textContent = "DKK " + product.price;
 copy.querySelector(".subtle").textContent = product.brandname;
 
-//brand 
-//price 
-//discount 
-
-
-//copy.querySelector("brand").textContent = product.brandname;
-
-//discount
 
 
 if(product.soldout){
@@ -40,6 +32,8 @@ if(product.onSale){
     //produkt på sale (dur ikke helt )
     copy.querySelector("article").classList.add("onSale")
 }
+
+copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
 //appende
 document.querySelector ("main").appendChild(copy);
 
